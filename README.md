@@ -30,7 +30,12 @@ PRIMARY KEY(id),
 FOREIGN KEY (id_cat) REFERENCES categories(id));
 
 CREATE TABLE products_order(
+id INT AUTO_INCREMENT,
 id_product INT,
 id_order INT,
+PRIMARY KEY(id),
 FOREIGN KEY (id_product) REFERENCES products(id),
 FOREIGN KEY (id_order) REFERENCES orders(id));
+
+
+
